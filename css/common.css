@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+body {
+  font-size: 15px;
+  /*文字の行間*/
+  line-height: 1.8;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 1px;
+  /*禁則事項をすべて解除。どの文字の間でも改行する*/
+  word-break: break-all;
+  color: #333;
+}
+
+a {
+  /*文字の装飾*/
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+li {
+  /*マーカーの設定（先頭の・など）*/
+  list-style: none;
+}
+
+.nav_all {
+  width: 100%;
+  /*スクロールしても固定表示*/
+  position: fixed;
+  background-color: #fff;
+  /*水平方向の距離 垂直方向の距離 ぼかし距離 広がり距離 影の色 inset*/
+  box-shadow: 0 3px 3px 0 rgb(0 0 0 / 20%);
+}
+
+.nav_list {
+  /*横並び*/
+  display: flex;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+}
+
+.nav_item {
+  font-size: 18px;
+  /*余白 上下 左右*/
+  padding: 0 24px;
+}
+
+.nav_link {
+  /*指定した要素を内部に表示*/
+  display: inline-block;
+  /*余白 上下 左右*/
+  padding: 20px 0;
+  color: #333;
+}
+
+/*カーソルを合わせた際のプロパティ*/
+.nav_link:hover {
+  color: #75A9FF;
+}
+
+.top-all {
+  /*横並び*/
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  /* height: 700px; */
+  /* background-color: #75A9FF; */
+  /*枠の外側の間隔 上下 左右 autoで中央*/
+  margin: 0 auto;
+}
+
+/* top1背景画像 */
+.top-bg {
+  background-image: url(../img/bg2.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  /* 元画像の縦横比のまま、要素内で可能な限り大きくする */
+  background-size: cover;
+  /* 画像を繰り返し表示しない */
+  background-repeat: no-repeat;
+}
+
+.top-txt1 {
+  /*文字の装飾*/
+  text-decoration: none;
+}
+
+.top_title {
+  font-size: 90px;
+  /*フォント 太字*/
+  font-weight: bold;
+  color: #0e0d0d;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+}
+
+.top_subtitle {
+  font-size: 20px;
+  /*フォント 太字*/
+  font-weight: bold;
+  color: #1c1919;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+}
+
+.section {
+  /*余白 上下 左右*/
+  padding: 120px 0;
+}
+
+/*疑似クラス化(奇数)*/
+.section:nth-of-type(odd) {
+  background-image: url(../img/top-bg-img.jpg);
+  /* 元画像の縦横比のまま、要素内で可能な限り大きくする */
+  background-size: cover;
+  /* 画像を繰り返し表示しない */
+  background-repeat: no-repeat;
+}
+
+/*疑似クラス化(奇数)*/
+.section:nth-of-type(even) {
+  background-image: url(../img/top-bg-img.jpg);
+  /* 元画像の縦横比のまま、要素内で可能な限り大きくする */
+  background-size: cover;
+  /* 画像を繰り返し表示しない */
+  background-repeat: no-repeat;
+}
+
+.inner {
+  /*横幅の最大値*/
+  max-width: 1000px;
+  /*枠の外側の間隔 上下 左右 autoで中央*/
+  margin: 0 auto;
+  /*余白 上下 左右*/
+  padding: 0 40px;
+}
+
+.font1 {
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+  color: #555;
+  /*枠の外側の間隔 下*/
+  margin-bottom: 60px;
+}
+
+.font2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.font3 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.font4 {
+  width: 60%;
+  /*枠の外側の間隔 上下 左右 autoで中央*/
+  margin: 0 auto;
+}
+
+.skill_item {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*枠の外側の間隔 下*/
+  margin-bottom: 50px;
+}
+
+.skill_img {
+  margin-right: 20px;
+}
+
+.skill_img img {
+  width: 60px;
+}
+
+.work_all {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*単一行or折り返し 折り返し*/
+  flex-wrap: wrap;
+}
+
+.work_item {
+  /*アイテムの表示領域*/
+  flex: 100%;
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+  /* margin-right: 0%; */
+}
+
+.work_item a img {
+  width: 100%;
+}
+
+.work_body p {
+  /* text-align: center; */
+  /* font-size: 15px; */
+  font-weight: bold;
+  /* padding-bottom: 6px; */
+}
+
+.about-all {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.about-txt {
+  width: 70%;
+}
+
+.myphoto {
+  width: 30%
+}
+
+.about_img {
+  width: 100%;
+}
+
+.contact_list {
+  /*要素の種類を指定 横並び*/
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*flexアイテムを中央寄せ*/
+  justify-content: center;
+}
+
+.contact_list li {
+  /*マーカーの設定（先頭の・など）*/
+  list-style: none;
+}
+
+.contact_item {
+  width: 60px;
+}
+
+.contact_mail {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bottom {
+  background-color: #333;
+}
+
+.bottom .inner {
+  padding: 30px;
+}
+
+.copyright {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
